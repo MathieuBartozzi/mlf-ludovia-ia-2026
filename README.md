@@ -1,4 +1,5 @@
-# IA et apprentissage — Présentation
+# Ce que l’IA change à l’École
+## Conférence MLF × Ludovia #23 — 25 août 2026
 
 Présentation HTML consacrée aux usages de l'intelligence artificielle générative en éducation et aux conditions permettant de préserver les apprentissages à Ludovia 2026
 
@@ -31,7 +32,7 @@ Elle aborde notamment :
 
 La présentation est publiée avec GitHub Pages.
 
-➡️ https://mathieubartozzi.github.io/ia-education-mlf-2026/
+➡️ https://mathieubartozzi.github.io/mlf-ludovia-ia-2026/
 
 ## Structure du dépôt
 
