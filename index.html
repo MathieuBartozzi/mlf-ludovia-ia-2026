@@ -162,7 +162,7 @@ h1,h2,h3,.display{
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
 
-.body-area{ flex:1; overflow:hidden; display:flex; flex-direction:column; justify-content:center; }
+.body-area{ flex:none; overflow:hidden; display:flex; flex-direction:column; justify-content:center; }
 
 .footer-source{
   position:absolute; bottom:16px; right:68px; font-size:11px; color:#66697f; font-style:italic; max-width:520px; text-align:right;
@@ -447,7 +447,7 @@ h1,h2,h3,.display{
    MODE PLENIERE — lisibilite et contraste sur grand ecran
    Actif uniquement au-dessus de 900 px : le mobile reste inchange.
    ========================================================= */
-@media screen and (min-width: 901px) and (min-height: 760px) {
+@media screen and (min-width: 901px) {
 
   /* Contraste renforce sans changer l'identite de la palette */
   :root{
@@ -537,6 +537,32 @@ h1,h2,h3,.display{
   .slide [style*="font-size:14px"]{ font-size:15px !important; }
   .slide [style*="font-size:14.5px"]{ font-size:15.5px !important; }
   .slide [style*="font-size:15px"]{ font-size:16px !important; }
+}
+
+/* =========================================================
+   DESKTOP À FAIBLE HAUTEUR
+   Safari fenêtre / MacBook Air à 100 %
+   ========================================================= */
+@media screen and (min-width: 901px) and (max-height: 800px){
+
+  .slide{
+    overflow-y:auto !important;
+    overflow-x:hidden !important;
+  }
+
+  .body-area{
+    flex:none !important;
+    overflow:visible !important;
+    justify-content:flex-start !important;
+    min-height:auto !important;
+  }
+
+  .footer-source{
+    position:static !important;
+    margin-top:16px !important;
+    max-width:none !important;
+    text-align:right !important;
+  }
 }
 
 /* =========================================================
